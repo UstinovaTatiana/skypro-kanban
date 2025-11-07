@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
-import Calendar from ".components/calendar/Calendar";
+import Calendar from "./components/calendar/Calendar";
 import PopBrowse from "./components/popups/PopBrowse/PopBrowse";
 import PopNewCard from "./components/popups/PopNewCard/PopNewCard";
 import PopUser from "./components/popups/PopUser/PopUser";
