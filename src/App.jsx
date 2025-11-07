@@ -1,4 +1,5 @@
 import "./App.css";
+import Header from "./components/header/Header";
 
 function App() {
   return (
@@ -408,52 +409,7 @@ function App() {
 
         {/* pop-up end */}
 
-        <header className="header">
-          <div className="container">
-            <div className="header__block">
-              <div className="header__logo _show _light">
-                <a href="" target="_self">
-                  <img src="images/logo.png" alt="logo" />
-                </a>
-              </div>
-              <div className="header__logo _dark">
-                <a href="" target="_self">
-                  <img src="images/logo_dark.png" alt="logo" />
-                </a>
-              </div>
-              <nav className="header__nav">
-                <button
-                  className="header__btn-main-new _hover01"
-                  id="btnMainNew"
-                >
-                  <a href="#popNewCard">Создать новую задачу</a>
-                </button>
-                <a href="#user-set-target" className="header__user _hover02">
-                  Ivan Ivanov
-                </a>
-                <div
-                  className="header__pop-user-set pop-user-set"
-                  id="user-set-target"
-                >
-                  {/* <a href="">x</a> */}
-                  <p className="pop-user-set__name">Ivan Ivanov</p>
-                  <p className="pop-user-set__mail">ivan.ivanov@gmail.com</p>
-                  <div className="pop-user-set__theme">
-                    <p>Темная тема</p>
-                    <input
-                      type="checkbox"
-                      className="checkbox"
-                      name="checkbox"
-                    />
-                  </div>
-                  <button type="button" className="_hover03">
-                    <a href="#popExit">Выйти</a>
-                  </button>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </header>
+        <Header />
         <main className="main">
           <div className="container">
             <div className="main__block">
@@ -494,14 +450,14 @@ function App() {
                                   d="M10.5625 2.03125H2.4375C1.7644 2.03125 1.21875 2.5769 1.21875 3.25V10.5625C1.21875 11.2356 1.7644 11.7812 2.4375 11.7812H10.5625C11.2356 11.7812 11.7812 11.2356 11.7812 10.5625V3.25C11.7812 2.5769 11.2356 2.03125 10.5625 2.03125Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinejoin="round"
+                                  stroke-linejoin="round"
                                 />
                                 <path
                                   d="M11.7812 4.0625H1.21875M3.25 1.21875V2.03125V1.21875ZM9.75 1.21875V2.03125V1.21875Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 />
                               </g>
                               <defs>
@@ -547,14 +503,14 @@ function App() {
                                   d="M10.5625 2.03125H2.4375C1.7644 2.03125 1.21875 2.5769 1.21875 3.25V10.5625C1.21875 11.2356 1.7644 11.7812 2.4375 11.7812H10.5625C11.2356 11.7812 11.7812 11.2356 11.7812 10.5625V3.25C11.7812 2.5769 11.2356 2.03125 10.5625 2.03125Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinejoin="round"
+                                  stroke-linejoin="round"
                                 />
                                 <path
                                   d="M11.7812 4.0625H1.21875M3.25 1.21875V2.03125V1.21875ZM9.75 1.21875V2.03125V1.21875Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 />
                               </g>
                               <defs>
@@ -600,14 +556,14 @@ function App() {
                                   d="M10.5625 2.03125H2.4375C1.7644 2.03125 1.21875 2.5769 1.21875 3.25V10.5625C1.21875 11.2356 1.7644 11.7812 2.4375 11.7812H10.5625C11.2356 11.7812 11.7812 11.2356 11.7812 10.5625V3.25C11.7812 2.5769 11.2356 2.03125 10.5625 2.03125Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinejoin="round"
+                                  stroke-linejoin="round"
                                 />
                                 <path
                                   d="M11.7812 4.0625H1.21875M3.25 1.21875V2.03125V1.21875ZM9.75 1.21875V2.03125V1.21875Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 />
                               </g>
                               <defs>
@@ -653,14 +609,14 @@ function App() {
                                   d="M10.5625 2.03125H2.4375C1.7644 2.03125 1.21875 2.5769 1.21875 3.25V10.5625C1.21875 11.2356 1.7644 11.7812 2.4375 11.7812H10.5625C11.2356 11.7812 11.7812 11.2356 11.7812 10.5625V3.25C11.7812 2.5769 11.2356 2.03125 10.5625 2.03125Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinejoin="round"
+                                  stroke-linejoin="round"
                                 />
                                 <path
                                   d="M11.7812 4.0625H1.21875M3.25 1.21875V2.03125V1.21875ZM9.75 1.21875V2.03125V1.21875Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 />
                               </g>
                               <defs>
@@ -706,14 +662,14 @@ function App() {
                                   d="M10.5625 2.03125H2.4375C1.7644 2.03125 1.21875 2.5769 1.21875 3.25V10.5625C1.21875 11.2356 1.7644 11.7812 2.4375 11.7812H10.5625C11.2356 11.7812 11.7812 11.2356 11.7812 10.5625V3.25C11.7812 2.5769 11.2356 2.03125 10.5625 2.03125Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinejoin="round"
+                                  stroke-linejoin="round"
                                 />
                                 <path
                                   d="M11.7812 4.0625H1.21875M3.25 1.21875V2.03125V1.21875ZM9.75 1.21875V2.03125V1.21875Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 />
                               </g>
                               <defs>
@@ -765,14 +721,14 @@ function App() {
                                   d="M10.5625 2.03125H2.4375C1.7644 2.03125 1.21875 2.5769 1.21875 3.25V10.5625C1.21875 11.2356 1.7644 11.7812 2.4375 11.7812H10.5625C11.2356 11.7812 11.7812 11.2356 11.7812 10.5625V3.25C11.7812 2.5769 11.2356 2.03125 10.5625 2.03125Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinejoin="round"
+                                  stroke-linejoin="round"
                                 />
                                 <path
                                   d="M11.7812 4.0625H1.21875M3.25 1.21875V2.03125V1.21875ZM9.75 1.21875V2.03125V1.21875Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 />
                               </g>
                               <defs>
@@ -824,14 +780,14 @@ function App() {
                                   d="M10.5625 2.03125H2.4375C1.7644 2.03125 1.21875 2.5769 1.21875 3.25V10.5625C1.21875 11.2356 1.7644 11.7812 2.4375 11.7812H10.5625C11.2356 11.7812 11.7812 11.2356 11.7812 10.5625V3.25C11.7812 2.5769 11.2356 2.03125 10.5625 2.03125Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinejoin="round"
+                                  stroke-linejoin="round"
                                 />
                                 <path
                                   d="M11.7812 4.0625H1.21875M3.25 1.21875V2.03125V1.21875ZM9.75 1.21875V2.03125V1.21875Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 />
                               </g>
                               <defs>
@@ -877,14 +833,14 @@ function App() {
                                   d="M10.5625 2.03125H2.4375C1.7644 2.03125 1.21875 2.5769 1.21875 3.25V10.5625C1.21875 11.2356 1.7644 11.7812 2.4375 11.7812H10.5625C11.2356 11.7812 11.7812 11.2356 11.7812 10.5625V3.25C11.7812 2.5769 11.2356 2.03125 10.5625 2.03125Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinejoin="round"
+                                  stroke-linejoin="round"
                                 />
                                 <path
                                   d="M11.7812 4.0625H1.21875M3.25 1.21875V2.03125V1.21875ZM9.75 1.21875V2.03125V1.21875Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 />
                               </g>
                               <defs>
@@ -930,14 +886,14 @@ function App() {
                                   d="M10.5625 2.03125H2.4375C1.7644 2.03125 1.21875 2.5769 1.21875 3.25V10.5625C1.21875 11.2356 1.7644 11.7812 2.4375 11.7812H10.5625C11.2356 11.7812 11.7812 11.2356 11.7812 10.5625V3.25C11.7812 2.5769 11.2356 2.03125 10.5625 2.03125Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinejoin="round"
+                                  stroke-linejoin="round"
                                 />
                                 <path
                                   d="M11.7812 4.0625H1.21875M3.25 1.21875V2.03125V1.21875ZM9.75 1.21875V2.03125V1.21875Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 />
                               </g>
                               <defs>
@@ -989,14 +945,14 @@ function App() {
                                   d="M10.5625 2.03125H2.4375C1.7644 2.03125 1.21875 2.5769 1.21875 3.25V10.5625C1.21875 11.2356 1.7644 11.7812 2.4375 11.7812H10.5625C11.2356 11.7812 11.7812 11.2356 11.7812 10.5625V3.25C11.7812 2.5769 11.2356 2.03125 10.5625 2.03125Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinejoin="round"
+                                  stroke-linejoin="round"
                                 />
                                 <path
                                   d="M11.7812 4.0625H1.21875M3.25 1.21875V2.03125V1.21875ZM9.75 1.21875V2.03125V1.21875Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 />
                               </g>
                               <defs>
@@ -1048,14 +1004,14 @@ function App() {
                                   d="M10.5625 2.03125H2.4375C1.7644 2.03125 1.21875 2.5769 1.21875 3.25V10.5625C1.21875 11.2356 1.7644 11.7812 2.4375 11.7812H10.5625C11.2356 11.7812 11.7812 11.2356 11.7812 10.5625V3.25C11.7812 2.5769 11.2356 2.03125 10.5625 2.03125Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinejoin="round"
+                                  stroke-linejoin="round"
                                 />
                                 <path
                                   d="M11.7812 4.0625H1.21875M3.25 1.21875V2.03125V1.21875ZM9.75 1.21875V2.03125V1.21875Z"
                                   stroke="#94A6BE"
                                   strokeWidth="0.8"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 />
                               </g>
                               <defs>
