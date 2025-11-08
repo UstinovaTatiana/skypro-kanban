@@ -1,6 +1,6 @@
 import React from "react";
-import Calendar from "../../calendar/Calendar";
-import './PopNewCard.css';
+import Calendar from "../../calendar/Сalendar";
+import "./PopNewCard.css";
 
 export default function PopNewCard() {
   return (

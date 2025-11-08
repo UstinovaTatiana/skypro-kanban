@@ -1,6 +1,6 @@
 import React from "react";
-import Calendar from "../../calendar/Calendar";
-import './PopBrowse.css';
+import Calendar from "../../calendar/Сalendar";
+import "./PopBrowse.css";
 
 export default function PopBrowse() {
   return (
