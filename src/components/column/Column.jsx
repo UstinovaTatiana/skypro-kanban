@@ -1,5 +1,6 @@
 import React from "react";
-import Card from "../сard/Card";
+import Card from "../Card/card";
+import "./Column.css";
 
 export default function Column({ title, cards = [] }) {
   return (
