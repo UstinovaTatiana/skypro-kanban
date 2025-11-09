@@ -62,7 +62,7 @@ function App() {
       ],
     },
     {
-      id: 1,
+      id: 3,
       title: "В работе",
       cards: [
         {
@@ -89,7 +89,7 @@ function App() {
       ],
     },
     {
-      id: 2,
+      id: 4,
       title: "Тестирование",
       cards: [
         {
@@ -102,7 +102,7 @@ function App() {
       ],
     },
     {
-      id: 2,
+      id: 5,
       title: "Готово",
       cards: [
         {
