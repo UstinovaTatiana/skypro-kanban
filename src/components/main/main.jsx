@@ -1,6 +1,7 @@
 import React from "react";
 import "./Main.css";
 
+
 import Column from "../column/Column";
 
 export default function Main({ columns = [] }) {
@@ -18,3 +19,4 @@ export default function Main({ columns = [] }) {
     </main>
   );
 }
+

@@ -1,21 +1,15 @@
 import React from "react";
 import "./Card.css";
 
-export default function Card({
-  id,
-  category,
-  colorClass,
-  title,
-  date,
-  onOpen,
-}) {
+export default function Card({ id, theme, title, date, colorClass, onOpen }) {
   return (
+    
     <div className="cards__item" data-id={id}>
       <div className="cards__card card">
         <div className="card__group">
           <div className={`card__theme ${colorClass ?? ""}`}>
             {" "}
-            <p className={colorClass ?? ""}>{category}</p>{" "}
+            <p className={colorClass ?? ""}>{theme}</p>{" "}
           </div>
           <a
             href="#popBrowse"
@@ -80,3 +74,65 @@ export default function Card({
     </div>
   );
 }
+
+// // Порядок статусов: чем раньше элемент, тем выше в списке
+// const STATUS_ORDER = [
+//   "Без статуса",
+//   "Нужно сделать",
+//   "В работе",
+//   "Тестирование",
+//   "Готово",
+// ];
+
+// function sortByStatus(a, b) {
+//   const pa = STATUS_ORDER.indexOf(a.status);
+//   const pb = STATUS_ORDER.indexOf(b.status);
+//   if (pa !== pb) return pa - pb;
+//   // второстепенно по id (или можно по date и т.д.)
+//   return a.id - b.id;
+// }
+
+// export default function Card() {
+//   const [loading, setLoading] = useState(true);
+//   const [columns, setColumns] = useState([]);
+//   const columnsCount = 5; // сколько колонок
+
+//   useEffect(() => {
+//     // эмуляция загрузки
+//     const t = setTimeout(() => {
+//       // сортируем по статусу, затем распределяем по колонкам по индексу
+//       const sorted = [...cardList].sort(sortByStatus);
+//       const cols = Array.from({ length: columnsCount }, (_, idx) =>
+//         sorted.filter((_, i) => i % columnsCount === idx)
+//       );
+//       setColumns(cols);
+//       setLoading(false);
+//     }, 800);
+//     return () => clearTimeout(t);
+//   }, []);
+
+//   if (loading) {
+//     return (
+//       <div style={{ padding: 16, textAlign: "center" }}>Данные загружаются</div>
+//     );
+//   }
+
+//   return (
+//     <div className="columns">
+//       {columns.map((colCards, idx) => (
+//         <div key={idx} className="column">
+//           {colCards.map((cardList) => (
+//             <div key={cardList.id} className="card">
+//               <h4>{cardList.title}</h4>
+//               <p>
+//                 {cardList.theme} • {cardList.date} • {cardList.status}
+//               </p>
+//             </div>
+//           ))}
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }
+
+//
