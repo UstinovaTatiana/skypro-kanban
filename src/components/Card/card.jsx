@@ -1,21 +1,15 @@
 import React from "react";
 import "./Card.css";
 
-export default function Card({
-  id,
-  category,
-  colorClass,
-  title,
-  date,
-  onOpen,
-}) {
+export default function Card({ id, theme, title, date, colorClass, onOpen }) {
   return (
+    
     <div className="cards__item" data-id={id}>
       <div className="cards__card card">
         <div className="card__group">
           <div className={`card__theme ${colorClass ?? ""}`}>
             {" "}
-            <p className={colorClass ?? ""}>{category}</p>{" "}
+            <p className={colorClass ?? ""}>{theme}</p>{" "}
           </div>
           <a
             href="#popBrowse"
@@ -80,3 +74,4 @@ export default function Card({
     </div>
   );
 }
+
