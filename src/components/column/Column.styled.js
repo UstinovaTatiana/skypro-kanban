@@ -19,7 +19,7 @@ export const ColumnTitle = styled.div`
 
 export const CardsContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 10px;
   & > * {
     animation: card-animation 500ms linear;
