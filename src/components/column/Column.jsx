@@ -1,15 +1,40 @@
 import React from "react";
-import Card from "../Card/card";
+import Card from "../card/card";
+import { ColumnWrapper, ColumnTitle, CardsContainer } from "./Column.styled";
 
-import "./Column.css";
-
-export default function Column({ title, cards = [] }) {
+// export default function Column({ title, cards = [] }) {
+//   return (
+//     <div className="main__column column">
+//       <div className="column__title">
+//         <p>{title}</p>
+//       </div>
+//       <div className="cards">
+//         {cards.map((card) => (
+//           <Card
+//             key={card.id}
+//             id={card.id}
+//             theme={card.theme}
+//             title={card.title}
+//             date={card.date}
+//             colorClass={card.colorClass}
+//             onOpen={() => {
+//               // здесь можно открыть попап или что-то ещё
+//               console.log("Open card", card.id);
+//             }}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+export default function Column({ title, cards = [], onOpen }) {
   return (
-    <div className="main__column column">
-      <div className="column__title">
+    <ColumnWrapper className="main__column column">
+      <ColumnTitle className="column__title">
         <p>{title}</p>
-      </div>
-      <div className="cards">
+      </ColumnTitle>
+      <CardsContainer className="cards">
+        {" "}
         {cards.map((card) => (
           <Card
             key={card.id}
@@ -19,12 +44,11 @@ export default function Column({ title, cards = [] }) {
             date={card.date}
             colorClass={card.colorClass}
             onOpen={() => {
-              // здесь можно открыть попап или что-то ещё
-              console.log("Open card", card.id);
+              onOpen?.(card.id);
             }}
           />
         ))}
-      </div>
-    </div>
+      </CardsContainer>
+    </ColumnWrapper>
   );
 }
