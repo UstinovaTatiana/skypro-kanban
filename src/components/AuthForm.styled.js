@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`*{ margin: 0; padding: 0; }`;
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -7,7 +10,7 @@ export const Wrapper = styled.div`
   overflow-y: scroll;
   background-color: #eaeef6;
 `;
-export const ContainerSignup = styled.div`
+export const ContainerRegister = styled.div`
   display: block;
   width: 100vw;
   min-height: 100vh;
@@ -73,7 +76,7 @@ export const FormLogin = styled.form`
     color: #94a6be;
   }
 
-  .modal__btn-signup-ent {
+  .modal__btn-Register-ent {
     width: 100%;
     height: 30px;
     background-color: #565eef;
@@ -95,7 +98,7 @@ export const FormLogin = styled.form`
     }
   }
 
-  .modal__btn-signup-ent a {
+  .modal__btn-Register-ent a {
     width: 100%;
     height: 100%;
     color: #ffffff;
@@ -133,7 +136,7 @@ export const FormLogin = styled.form`
       border: none;
       box-shadow: none;
     }
-    .modal__btn-signup-ent {
+    .modal__btn-Register-ent {
       height: 40px;
     }
   }

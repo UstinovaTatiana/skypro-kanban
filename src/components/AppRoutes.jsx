@@ -4,10 +4,11 @@ import NewCardPage from "../pages/NewCard";
 import CardPage from "../pages/Card";
 import BrowsePage from "../pages/Browse";
 import MainPage from "../pages/Main";
-import SignInPage from "../pages/SignIn";
-import SignUpPage from "../pages/SignUp";
+import LoginPage from "../pages/Login";
+import RegisterPage from "../pages/Register";
 import NotFoundPage from "../pages/NotFound";
 import PrivateRoute from "../pages/PrivateRoute";
+import HeaderPage from "../pages/Header";
 
 function AppRoutes() {
   const [isAuth, setIsAuth] = useState(false);
@@ -24,16 +25,16 @@ function AppRoutes() {
       {/* Главная страница */}
       <Route element={<PrivateRoute isAuth={isAuth} />}>
         <Route path="/" element={<MainPage loading={loading} />} />
-
         <Route path="card/add" element={<NewCardPage />} />
         <Route path="card/:id" element={<CardPage />} />
         <Route path="/browse" element={<BrowsePage />} />
       </Route>
       {/* Страница входа */}
-      <Route path="/sign-in" element={<SignInPage setIsAuth={setIsAuth} />} />
+      <Route path="/Login" element={<LoginPage setIsAuth={setIsAuth} />} />
       {/* Страница регистрации */}
-      <Route path="/sign-up" element={<SignUpPage />} />
-      <Route path="\*" element={<NotFoundPage />} />
+      <Route path="/Register" element={<RegisterPage />} />
+      <Route path="/*" element={<NotFoundPage />} />
+      <Route path="/exit" element={<HeaderPage setIsAuth={setIsAuth} />} />
     </Routes>
   );
 }

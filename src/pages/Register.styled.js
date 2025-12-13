@@ -45,7 +45,7 @@
     background-color: #EAEEF6;
   }
   
-  .container-signup {
+  .container-Register {
     display: block;
     width: 100vw;
     min-height: 100vh;
@@ -119,7 +119,7 @@
     letter-spacing: -0.28px;
     color: #94A6BE;
   }
-  .modal__btn-signup-ent {
+  .modal__btn-Register-ent {
     width: 100%;
     height: 30px;
     background-color: #565EEF;
@@ -137,7 +137,7 @@
     letter-spacing: -0.14px;
     color: #FFFFFF;
   }
-  .modal__btn-signup-ent a {
+  .modal__btn-Register-ent a {
     width: 100%;
     height: 100%;
     color: #FFFFFF;
@@ -172,7 +172,7 @@
       border: none;
       box-shadow: none;
     }
-    .modal__btn-signup-ent {
+    .modal__btn-Register-ent {
       height: 40px;
     }
   }

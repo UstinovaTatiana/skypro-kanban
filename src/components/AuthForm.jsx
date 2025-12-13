@@ -3,14 +3,14 @@ import BaseButton from "./Button";
 import BaseInput from "./Input";
 import {
   Wrapper,
-  ContainerSignup,
+  ContainerRegister,
   Modal,
   Block,
   ModalTitle,
   FormLogin,
 } from "./AuthForm.styled";
 
-const AuthForm = ({ isSignUp, setIsAuth }) => {
+const AuthForm = ({ isRegister, setIsAuth }) => {
   const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
@@ -20,12 +20,12 @@ const AuthForm = ({ isSignUp, setIsAuth }) => {
 
   return (
     <Wrapper>
-      <ContainerSignup>
+      <ContainerRegister>
         <Modal>
           <Block>
-            <ModalTitle>{isSignUp ? "Регистрация" : "Вход"}</ModalTitle>
+            <ModalTitle>{isRegister ? "Регистрация" : "Вход"}</ModalTitle>
             <FormLogin id="formLogUp" action="#">
-              {isSignUp && (
+              {isRegister && (
                 <BaseInput
                   tag="input"
                   className="modal__input first-name"
@@ -55,27 +55,27 @@ const AuthForm = ({ isSignUp, setIsAuth }) => {
                 onClick={handleLogin}
                 type="secondary"
                 fullWidth={true}
-                className="modal__btn-signup-ent _hover01"
-                id="SignUpEnter"
-                text={isSignUp ? "Зарегистрироваться" : "Войти"}
+                className="modal__btn-Register-ent _hover01"
+                id="RegisterEnter"
+                text={isRegister ? "Зарегистрироваться" : "Войти"}
               />
-              {!isSignUp && (
+              {!isRegister && (
                 <div className="modal__form-group">
-                  <p>Нужно зарегистрироваться</p>
-                  <Link to="/sign-up">Регистрация здесь</Link>
+                  <p>Нужно зарегистрироваться?</p>
+                  <Link to="/Register">Регистрируйтесь здесь</Link>
                 </div>
               )}
-              {isSignUp && (
+              {isRegister && (
                 <div className="modal__form-group">
                   <p>
-                    Уже есть аккаунт? <Link to="/sign-in">Войдите здесь</Link>
+                    Уже есть аккаунт? <Link to="/Login">Войдите здесь</Link>
                   </p>
                 </div>
               )}
             </FormLogin>
           </Block>
         </Modal>
-      </ContainerSignup>
+      </ContainerRegister>
     </Wrapper>
   );
 };

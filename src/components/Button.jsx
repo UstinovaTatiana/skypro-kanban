@@ -9,7 +9,7 @@ const BaseButton = ({
   text,
 }) => {
   const classNames = [
-    "modal__btn-signup-ent",
+    "modal__btn-Register-ent",
     type === "secondary" ? "secondary" : "",
     fullWidth ? "full-width" : "",
     className,

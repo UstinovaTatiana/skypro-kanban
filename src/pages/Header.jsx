@@ -1,21 +1,17 @@
 import { useNavigate } from "react-router-dom";
+import React from "react";
+import Header from "../components/header/Header";
 
-const Header = ({ setIsAuth }) => {
+const HeaderPage = ({ setIsAuth }) => {
   const navigate = useNavigate();
 
   function handleLogout(e) {
     e.preventDefault();
+    console.log("handleLogout вызвана");
     setIsAuth(false);
-    navigate("/sign-in");
+    navigate("/Login");
   }
-
-  return (
-    <SHeader>
-      <div className="header__actions">
-        <Button onClick={handleLogout} type="tertiary" text="Выйти" />
-      </div>
-    </SHeader>
-  );
+  return <Header onLogout={handleLogout} />;
 };
 
-export default Header;
+export default HeaderPage;
